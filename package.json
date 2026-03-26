@@ -1,0 +1,22 @@
+{
+  "name": "wordpress",
+  "version": "1.0.0",
+  "description": "",
+  "main": "routes.js",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dpirek/wordpress-js.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/dpirek/wordpress-js/issues"
+  },
+  "homepage": "https://github.com/dpirek/wordpress-js#readme"
+}
