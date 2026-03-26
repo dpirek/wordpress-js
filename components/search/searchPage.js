@@ -3,7 +3,7 @@ import { searchApi } from '../../models/search.js';
 import { createRequire } from 'node:module';
 
 const require = createRequire(import.meta.url);
-const labels = require('../../config/cz.json');
+const labels = require('../../config/en.json');
 
 function escapeHtml(value = '') {
   return String(value)

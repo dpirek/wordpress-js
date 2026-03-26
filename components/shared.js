@@ -1,6 +1,6 @@
 import { createRequire } from 'node:module';
 const require = createRequire(import.meta.url);
-const labels = require('../config/cz.json');
+const labels = require('../config/en.json');
 
 const navList = [
   { text: 'home', url: '/', icon: 'bi-file-earmark-text' },
