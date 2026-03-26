@@ -2,7 +2,7 @@ import crypto from 'crypto';
 import { redirect } from './response.js';
 
 const SECRET = process.env.SECRET || '3828aaf8ba32fe3006d37c7f3ac46bcb';
-const AUTH_COOKIE_NAME = process.env.AUTH_COOKIE_NAME || 'ks_cz_auth';
+const AUTH_COOKIE_NAME = process.env.AUTH_COOKIE_NAME || 'wordpress_js_auth';
 
 function encryptCookie(value) {
   const iv = crypto.randomBytes(16);
