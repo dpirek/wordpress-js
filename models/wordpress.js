@@ -1,15 +1,15 @@
-import wpUsers from './wp_users.js';
-import wpPosts from './wp_posts.js';
-import wpPostmeta from './wp_postmeta.js';
-import wpComments from './wp_comments.js';
-import wpCommentmeta from './wp_commentmeta.js';
-import wpTerms from './wp_terms.js';
-import wpTermmeta from './wp_termmeta.js';
-import wpTermTaxonomy from './wp_term_taxonomy.js';
-import wpTermRelationships from './wp_term_relationships.js';
-import wpUsermeta from './wp_usermeta.js';
-import wpOptions from './wp_options.js';
-import wpLinks from './wp_links.js';
+import wpUsers from './users.js';
+import wpPosts from './posts.js';
+import wpPostmeta from './postmeta.js';
+import wpComments from './comments.js';
+import wpCommentmeta from './commentmeta.js';
+import wpTerms from './terms.js';
+import wpTermmeta from './termmeta.js';
+import wpTermTaxonomy from './term_taxonomy.js';
+import wpTermRelationships from './term_relationships.js';
+import wpUsermeta from './usermeta.js';
+import wpOptions from './options.js';
+import wpLinks from './links.js';
 
 export {
   wpUsers,

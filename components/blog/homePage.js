@@ -1,7 +1,7 @@
 import { page, navList, footerLinks } from '../shared.js';
 import { escapeHtml, date, dbDate } from '../../utils/string.js';
-import wpPostsModel from '../../models/wp_posts.js';
-import wpCommentsModel from '../../models/wp_comments.js';
+import wpPostsModel from '../../models/posts.js';
+import wpCommentsModel from '../../models/comments.js';
 import { db } from '../../models/wordpressDb.js';
 import { redirect } from '../../utils/response.js';
 
