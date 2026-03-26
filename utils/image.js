@@ -2,11 +2,10 @@ import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import { respondLocalImage } from '../utils/response.js';
-import { saveImageFromUrl } from '../utils/proxy.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
-const PLACEHOLDER_IMAGE_NAME = 'placeholder-male.jpg';
+const PLACEHOLDER_IMAGE_NAME = 'placeholder.jpg';
 const IMG_ROOT = path.join(__dirname, '..', 'public/images');
 const PLACEHOLDER_IMAGE_PATH = path.join(IMG_ROOT, PLACEHOLDER_IMAGE_NAME);
 
@@ -21,15 +20,8 @@ function respondPlaceholderImage(req, res) {
 }
 
 function respondImage(req, res) {
-  // First serve files uploaded to /img from local storage.
   if (respondLocalImage(req, res)) return;
-
-  // save from server and respond with placeholder
-  saveImageFromUrl(req);
   return respondPlaceholderImage(req, res);
-
-  // // Proxy if not local.
-  // return proxyImageRequest(req, res);
 }
 
 export {

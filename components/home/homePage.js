@@ -59,7 +59,7 @@ async function homePage({ authUser }) {
     navList,
     footerLinks,
     title: 'Blog',
-    javascriptLinks: ['/js/pages/all.js', '/js/pages/home-activity.js'],
+    javascriptLinks: [],
     content: `
       <h1 class="hr">Blog Posts</h1>
       <p class="text-muted">Published posts: ${posts.length}</p>
